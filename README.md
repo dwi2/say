@@ -1,2 +1,2 @@
 # say
-A tiny practive of Go language
+A tiny progamming exercise of Go language
