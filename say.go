@@ -9,7 +9,7 @@ import (
   "syscall"
 )
 
-// Actuall we don't really need this
+// Actually we don't really need this
 func exitOnSignal() {
   sigs := make(chan os.Signal, 1);
   signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM);
@@ -34,7 +34,9 @@ func main() {
     if err != nil {
       log.Fatal(err);
     }
-    // TODO
+    // TODO: rewrite this with gocui https://github.com/jroimartin/gocui
+    // TODO: remeber command history and let user go back and forth with up and
+    // down key
   }
 
 }
